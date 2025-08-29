@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-0: rgb(255 255 255);
+  --color-surface-50: rgb(250 250 250);
+  --color-surface-100: rgb(245 245 245);
+  --color-surface-200: rgb(238 238 238);
+  --color-surface-300: rgb(224 224 224);
+  --color-surface-400: rgb(189 189 189);
+  --color-surface-500: rgb(158 158 158);
+  --color-surface-600: rgb(117 117 117);
+  --color-surface-700: rgb(97 97 97);
+  --color-surface-800: rgb(66 66 66);
+  --color-surface-900: rgb(33 33 33);
+  --color-surface-950: rgb(3 6 23);
+  --radius-2.5xl: 20px;
+
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  --animate-shimmer: shimmer 2s linear infinite;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.nav-link {
+  @apply text-white text-base leading-5 px-5 py-3 rounded-full hover:bg-white hover:text-surface-800 transition-all ease-in-out duration-500;
+}
+.form-label {
+  @apply text-sm font-semibold text-surface-600 leading-4;
+}
+.form-input {
+  @apply px-5 py-3 rounded-full border border-surface-300 placeholder:text-surface-500 text-sm font-semibold text-surface-800 placeholder:font-normal focus:outline-none;
+}
+.btn-primary {
+  @apply px-5 py-3.5 cursor-pointer rounded-full w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold text-sm leading-5 hover:opacity-80 transition-all ease-in-out duration-300;
+}
+.text-error {
+  @apply text-red-500 font-normal text-sm leading-4;
+}
+.dashboard-card {
+  @apply bg-surface-100 border border-surface-200 p-5 rounded-[15px] flex flex-col gap-5 w-full;
+}
+.quick-link-card {
+  @apply bg-white border shadow-sm border-surface-200 rounded-[15px] p-8 text-surface-800 font-semibold text-2xl;
+}
+.stats-card {
+  @apply bg-white border shadow-sm border-surface-200 rounded-[15px] p-5 flex flex-col gap-2.5;
+}
+.page-heading {
+  @apply text-[28px] text-surface-900 font-bold leading-8;
+}
+.page-description {
+  @apply text-sm text-surface-700 font-normal leading-4 mb-0;
+}
+.note-card {
+  @apply rounded-[15px] shadow-sm hover:shadow-md transition cursor-pointer border border-gray-200 bg-white;
+}
