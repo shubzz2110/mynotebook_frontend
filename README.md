@@ -119,6 +119,6 @@ This project is licensed under the **MIT License**.
 ---
 
 ### 👨‍💻 Author
-Developed by **Your Name**  
-GitHub: Shubham Homkar (https://github.com/shubzz2110)
+Developed by **Shubham Homkar**  
+GitHub: shubzz2110 (https://github.com/shubzz2110)
 
