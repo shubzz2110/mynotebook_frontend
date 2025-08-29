@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 MyNotebook Frontend
 
-## Getting Started
+This is the **frontend** of the MyNotebook project, built with **Next.js 14 (App Router)** and **TypeScript**.  
+It provides a clean, responsive, and modern UI to interact with the MyNotebook backend API (Django + DRF).
 
-First, run the development server:
+---
 
+## 🚀 Features
+- Next.js 14 with App Router
+- TypeScript for type safety
+- TailwindCSS for styling
+- Authentication with JWT (via backend API)
+- Notes management (create, update, delete, search, filter, pin, favorite)
+- Pagination & sorting
+- Responsive UI
+
+---
+
+## 📦 Tech Stack
+- **Next.js 14**
+- **React 18**
+- **TypeScript**
+- **TailwindCSS**
+- **Axios** (API calls)
+- **Lucide-react** (icons)
+- **Framer Motion** (animations)
+- **Moment.js** (date formatting)
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/mynotebook_frontend.git
+cd mynotebook_frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Setup environment variables
+Create a `.env.local` file in the root directory and configure the backend API URL:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
+```
 
-## Learn More
+### 4️⃣ Run the development server
+```bash
+npm run dev
+```
+The app will be available at 👉 [http://localhost:3000](http://localhost:3000)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📜 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` → Start development server  
+- `npm run build` → Build production app  
+- `npm start` → Run production build  
+- `npm run lint` → Run linter  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Folder Structure
+```
+mynotebook_frontend/
+│── app/              # Next.js app directory (App Router)
+│── components/       # Reusable UI components
+│── lib/              # API and helper functions
+│── public/           # Static assets
+│── styles/           # Global styles
+│── package.json      # Project dependencies
+│── tsconfig.json     # TypeScript config
+│── .env.local        # Environment variables
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧪 Testing (optional)
+If you’re using Jest or Playwright (optional):
+```bash
+npm run test
+```
+
+---
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub.  
+2. Import the repository in [Vercel](https://vercel.com/).  
+3. Add your `.env.local` variables in Vercel dashboard.  
+4. Deploy 🚀  
+
+### Docker (Optional)
+```bash
+docker build -t mynotebook-frontend .
+docker run -p 3000:3000 mynotebook-frontend
+```
+
+---
+
+## 🤝 Contributing
+1. Fork the repo  
+2. Create your feature branch (`git checkout -b feature/my-feature`)  
+3. Commit your changes (`git commit -m "Add new feature"`)  
+4. Push to the branch (`git push origin feature/my-feature`)  
+5. Open a Pull Request  
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.
+
+---
+
+### 👨‍💻 Author
+Developed by **Your Name**  
+GitHub: [yourusername](https://github.com/yourusername)
+
